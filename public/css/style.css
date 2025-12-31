@@ -1,0 +1,460 @@
+        :root {
+            --primary: #0f4c81;
+            --secondary: #00b894;
+            --dark: #1e272e;
+            --light: #f5f7fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, Arial;
+        }
+
+        body {
+            background: #fff;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Header */
+        header {
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        nav a {
+            margin: 0 10px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: var(--secondary);
+        }
+
+        .active {
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        .btn {
+            padding: 10px 18px;
+            background: var(--secondary);
+            color: #fff;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(to left, var(--primary), #092f4a);
+            color: #fff;
+            padding: 80px 0;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .hero-buttons a {
+            margin-left: 10px;
+            display: inline-block;
+        }
+
+        /* Sections */
+        section {
+            padding: 70px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            color: var(--primary);
+        }
+
+        /* Why Us */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .feature-box {
+            background: var(--light);
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .feature-box h3 {
+            margin: 15px 0;
+            color: var(--primary);
+        }
+
+        /* Courses */
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .course {
+            border: 1px solid #eee;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .course h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Stats */
+        .stats {
+            background: var(--primary);
+            color: #fff;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            text-align: center;
+            gap: 30px;
+        }
+
+        .stat h3 {
+            font-size: 36px;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .testimonial {
+            background: var(--light);
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        /* Instructors */
+        .instructors {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .instructor {
+            text-align: center;
+        }
+
+        .instructor img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        /* CTA */
+        .cta {
+            background: var(--secondary);
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .cta h2 {
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+
+        /* // register */
+        .register-card {
+            max-width: 520px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+        }
+
+        .register-card h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #0f4c81;
+            font-weight: bold;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            transition: .3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: #0f4c81;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(15, 76, 129, .1);
+        }
+
+        select[multiple] {
+            height: 120px;
+        }
+
+        .hint {
+            font-size: 12px;
+            color: #777;
+            margin-top: 5px;
+        }
+
+        .days {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .day {
+            background: #f4f6f8;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            border: 1px solid transparent;
+            transition: .3s;
+        }
+
+        .day input {
+            display: none;
+        }
+
+        .day.active {
+            background: #00b894;
+            color: #fff;
+            border-color: #00b894;
+        }
+
+        .submit-btn {
+            width: 100%;
+            margin-top: 25px;
+            padding: 12px;
+            background: #0f4c81;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .submit-btn:hover {
+            background: #09365f;
+        }
+
+        .multi-select {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            cursor: pointer;
+            min-height: 44px;
+        }
+
+        .multi-select input {
+            border: none;
+            outline: none;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .tag {
+            background: #0f4c81;
+            color: #fff;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .tag span {
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .options {
+            display: none;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-top: 5px;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .options div {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .options div:hover {
+            background: #f4f6f8;
+        }
+
+        .tags-inline {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .multi-select {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            min-height: 44px;
+            cursor: pointer;
+        }
+
+        .multi-select input {
+            border: none;
+            outline: none;
+            font-size: 14px;
+            cursor: pointer;
+            flex: 1;
+        }
+
+        .tag {
+            background: #00b894;
+            color: #fff;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .tag span {
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .options {
+            display: none;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-top: 5px;
+            background: #fff;
+        }
+
+        .options div {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .options div:hover {
+            background: #f4f6f8;
+        }
+
+        .days-tag {
+            background: #0edeec;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: #ccc;
+            padding: 40px 0;
+        }
+
+        footer .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        footer h3 {
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        footer p,
+        footer a {
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
